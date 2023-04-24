@@ -118,12 +118,12 @@ input#new-task {
 .app-body__item >    input[type="text"] {
   width: 226px
 }
-.app-body__button.delete img {
+.app-body__button.delete .app-body__img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.app-body__button.delete img:hover {
+.app-body__button.delete .app-body__img-remove:hover {
   transform: rotateZ(0);
 }
 
@@ -134,15 +134,15 @@ input#new-task {
 }
 
 /* Edit Task */
-.app-body__list li input[type=text] {
+.app-body__item input[type=text] {
   display:none
 }
 
-.app-body__list li.editMode input[type=text] {
+.app-body__item.editMode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-.app-body__list li.editMode label {
+.app-body__item.editMode label {
   display:none;
 }
