@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: "Lato", sans-serif;
 }
-.aaa {
+.eisenhower-matrix-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.eisenhower-matrix-block__img {
   width: 100%;
 }
-.aaa .more_inf {
+.eisenhower-matrix-block__link {
   font-family: "fantasy", "cursive";
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.eisenhower-matrix-block { text-align: center;
 }
 }
-.centered-main-page-element {
+.app-body {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,10 +31,10 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.app-body__wrapper-add-task {
   display: flex;
 }
-ul {
+.app-body__list {
   margin:0;
   padding: 0px;
 }
@@ -93,7 +93,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.app-body__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,20 +102,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.app-body__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.app-body__item > input[type="checkbox"] {
   margin: 0 10px;
 }
-li > label {
+.app-body__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.app-body__item >    input[type="text"] {
   width: 226px
 }
 button.delete img {
@@ -128,21 +128,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.app-body__list#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.app-body__list li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+.app-body__list li.editMode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+.app-body__list li.editMode label {
   display:none;
 }
