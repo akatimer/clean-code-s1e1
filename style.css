@@ -4,46 +4,58 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .eisenhower-matrix-block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .eisenhower-matrix-block__img {
   width: 100%;
 }
+
 .eisenhower-matrix-block__link {
   font-family: "fantasy", "cursive";
 }
 
 @media (max-width:768px) {
-.eisenhower-matrix-block { text-align: center;
+
+  .eisenhower-matrix-block { 
+    text-align: center;
+  }
 }
-}
+
 .app-body {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .app-body__wrapper-add-task {
   display: flex;
 }
+
 .app-body__list {
   margin:0;
   padding: 0px;
 }
+
 .app-body__item, .app-body__headline {
-  list-style:none;
+  list-style: none;
 }
+
 input,button{
-  outline:none;
+  outline: none;
 }
+
 .app-body__button {
   background: none;
   border: 0px;
@@ -53,9 +65,11 @@ input,button{
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+
 .app-body__button:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .app-body__headline,
 label[for='new-task'] {
@@ -67,6 +81,7 @@ label[for='new-task'] {
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -79,6 +94,7 @@ input[type="text"] {
   font-family: "Lato", sans-serif;
   color: #888;
 }
+
 input[type="text"]:focus {
   color: #333;
 }
@@ -88,6 +104,7 @@ label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
 }
+
 input#new-task {
   width: 318px;
 }
@@ -97,11 +114,11 @@ input#new-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .app-body__item > * {
   vertical-align: middle;
 }
@@ -109,20 +126,24 @@ input#new-task {
 .app-body__item > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .app-body__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.app-body__item >    input[type="text"] {
+
+.app-body__item > input[type="text"] {
   width: 226px
 }
+
 .app-body__button.delete .app-body__img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .app-body__button.delete .app-body__img-remove:hover {
   transform: rotateZ(0);
 }
@@ -135,7 +156,7 @@ input#new-task {
 
 /* Edit Task */
 .app-body__item input[type=text] {
-  display:none
+  display: none
 }
 
 .app-body__item.editMode input[type=text] {
@@ -144,5 +165,5 @@ input#new-task {
 }
 
 .app-body__item.editMode label {
-  display:none;
+  display: none;
 }
