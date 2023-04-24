@@ -162,11 +162,11 @@ label[for='new-task'] {
   display: none;
 }
 
-.app-body__item.editMode input[type=text] {
+.app-body__item.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.app-body__item.editMode label {
+.app-body__item.edit-mode label {
   display: none;
 }

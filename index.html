@@ -20,25 +20,25 @@
       <div>
         <label class="app-body__headline" for="new-task">Add Item</label>
         <div class="app-body__wrapper-add-task">
-          <input id='new-task' class="task" type="text">
+          <input id='new-task' class="app-body__task task" type="text">
           <button class="app-body__button">Add</button>
         </div>
       </div>
     <h3 class="app-body__headline">Todo</h3>
-    <ul class="app-body__list list-todo" id="incompleteTasks">
+    <ul class="app-body__list list-todo" id="incomplete-tasks">
       <li class="app-body__item">
         <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task">
+        <label class="app-body__label task">Pay Bills</label>
+        <input type="text" class="app-body__task task">
         <button class="app-body__button edit">Edit</button>
         <button class="app-body__button delete">
           <img class="app-body__img-remove" src="./remove.svg" alt="remove.svg">
         </button>
       </li>
-    <li class="app-body__item editMode">
+    <li class="app-body__item edit-mode">
       <input type="checkbox">
-      <label class="task">Go Shopping</label>
-      <input type="text" value="Go Shopping" class="task">
+      <label class="app-body__label task">Go Shopping</label>
+      <input type="text" value="Go Shopping" class="app-body__task task">
       <button class="app-body__button edit">Save</button>
       <button class="app-body__button delete">
         <img class="app-body__img-remove" src="./remove.svg" alt="remove.svg">
@@ -49,8 +49,8 @@
     <ul class="app-body__list list-completed" id="completed-tasks">
       <li class="app-body__item">
         <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
+        <label class="app-body__label task">See the Doctor</label>
+        <input type="text" class="app-body__task task">
         <button class="app-body__button edit">Edit</button>
         <button class="app-body__button delete">
           <img class="app-body__img-remove" src="./remove.svg" alt="remove.svg">
