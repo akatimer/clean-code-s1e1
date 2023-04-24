@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
@@ -38,13 +38,13 @@ body {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.app-body__item, .app-body__headline {
   list-style:none;
 }
 input,button{
   outline:none;
 }
-button {
+.app-body__button {
   background: none;
   border: 0px;
   color: #888;
@@ -53,11 +53,11 @@ button {
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
-button:hover {
+.app-body__button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
+.app-body__headline,
 label[for='new-task'] {
   color: #333;
   font-weight: 700;
@@ -118,12 +118,12 @@ input#new-task {
 .app-body__item >    input[type="text"] {
   width: 226px
 }
-button.delete img {
+.app-body__button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.app-body__button.delete img:hover {
   transform: rotateZ(0);
 }
 
