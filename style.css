@@ -48,7 +48,8 @@
   padding: 0px;
 }
 
-.app-body__item, .app-body__headline {
+.app-body__item, 
+.app-body__headline {
   list-style: none;
 }
 
