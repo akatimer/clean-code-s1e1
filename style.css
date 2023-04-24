@@ -25,6 +25,7 @@
   .eisenhower-matrix-block { 
     text-align: center;
   }
+
 }
 
 .app-body {
@@ -36,7 +37,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .app-body__wrapper-add-task {
@@ -44,7 +45,7 @@
 }
 
 .app-body__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -53,7 +54,7 @@
   list-style: none;
 }
 
-input,button{
+input,button {
   outline: none;
 }
 
@@ -136,7 +137,7 @@ label[for='new-task'] {
 }
 
 .app-body__item > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .app-body__button.delete .app-body__img-remove {
@@ -157,12 +158,12 @@ label[for='new-task'] {
 
 /* Edit Task */
 .app-body__item input[type=text] {
-  display: none
+  display: none;
 }
 
 .app-body__item.editMode input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px;
 }
 
 .app-body__item.editMode label {
